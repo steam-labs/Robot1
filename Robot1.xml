@@ -70,7 +70,7 @@
                           <block type="oled_setcursor" id="971" inline="true">
                             <value name="STARTX">
                               <block type="math_number" id="972">
-                                <field name="NUM">10</field>
+                                <field name="NUM">20</field>
                               </block>
                             </value>
                             <value name="STARTY">
@@ -90,7 +90,7 @@
                                     </value>
                                     <value name="B">
                                       <block type="math_number" id="941">
-                                        <field name="NUM">70</field>
+                                        <field name="NUM">80</field>
                                       </block>
                                     </value>
                                   </block>
