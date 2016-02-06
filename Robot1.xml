@@ -1,37 +1,51 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="438" inline="true" x="201" y="70">
-    <value name="TIMES">
-      <block type="math_number" id="445">
-        <field name="NUM">10000</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="366">
-        <next>
-          <block type="oled_setcursor" id="483" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="514">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="521">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <next>
-              <block type="oled_drawnumber" id="530" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="129">
-                    <field name="LIGHT">RED</field>
-                  </block>
-                </value>
-              </block>
-            </next>
+  <block type="movement_forward" id="540" x="90" y="6">
+    <next>
+      <block type="controls_whileUntil" id="555" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="547">
+            <field name="LIGHT">RED</field>
           </block>
-        </next>
+        </value>
+        <statement name="DO">
+          <block type="controls_repeat" id="438" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="445">
+                <field name="NUM">10000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="oled_cleardisplay" id="366">
+                <next>
+                  <block type="oled_setcursor" id="483" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="514">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="521">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawnumber" id="530" inline="true">
+                        <value name="NUMBER">
+                          <block type="sensor_spectrometer" id="129">
+                            <field name="LIGHT">RED</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
   <block type="controls_if" id="122" inline="false" x="-117" y="232"></block>
   <block type="multimedia_displaybmp" id="323" x="-167" y="307">
