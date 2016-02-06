@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="894" inline="true" x="-107" y="-45">
+  <block type="controls_repeat" id="894" inline="true" x="-100" y="-34">
     <value name="TIMES">
       <block type="math_number" id="905">
         <field name="NUM">10000</field>
@@ -11,7 +11,7 @@
           <block type="oled_drawnumber" id="860" inline="true">
             <value name="NUMBER">
               <block type="sensor_spectrometer" id="867">
-                <field name="LIGHT">RED</field>
+                <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <next>
