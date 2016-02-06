@@ -8,13 +8,14 @@
           </block>
         </value>
         <next>
-          <block type="controls_if" id="122" inline="false">
-            <value name="IF0">
+          <block type="controls_whileUntil" id="137" inline="false">
+            <field name="MODE">UNTIL</field>
+            <value name="NUMBER">
               <block type="sensor_spectrometer" id="129">
                 <field name="LIGHT">RED</field>
               </block>
             </value>
-            <statement name="DO0">
+            <statement name="DO">
               <block type="movement_stop" id="46"></block>
             </statement>
           </block>
@@ -22,4 +23,5 @@
       </block>
     </next>
   </block>
+  <block type="controls_if" id="122" inline="false" x="-117" y="232"></block>
 </xml>
