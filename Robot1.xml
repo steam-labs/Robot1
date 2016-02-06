@@ -47,8 +47,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_if" id="122" inline="false" x="-117" y="232"></block>
-  <block type="multimedia_displaybmp" id="323" x="-167" y="307">
-    <field name="BMP"></field>
-  </block>
 </xml>
