@@ -19,24 +19,5 @@
       </block>
     </next>
   </block>
-  <block type="procedures_defreturn" id="179" inline="false" x="76" y="71">
-    <mutation></mutation>
-    <field name="NAME">stop on red</field>
-    <statement name="STACK">
-      <block type="movement_stop" id="46"></block>
-    </statement>
-  </block>
-  <block type="procedures_callreturn" id="188" x="508" y="128">
-    <mutation name="stop on red"></mutation>
-  </block>
   <block type="controls_if" id="122" inline="false" x="-117" y="232"></block>
-  <block type="controls_whileUntil" id="137" inline="false" x="247" y="217">
-    <field name="MODE">UNTIL</field>
-  </block>
-  <block type="controls_whileUntil" id="203" inline="false" x="428" y="235">
-    <field name="MODE">WHILE</field>
-  </block>
-  <block type="math_number" id="309" x="299" y="349">
-    <field name="NUM">0</field>
-  </block>
 </xml>
