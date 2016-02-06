@@ -1,23 +1,40 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="244" y="56">
-    <next>
-      <block type="robot_delay" id="22" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="36">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="438" inline="true" x="335" y="16">
+    <value name="TIMES">
+      <block type="math_number" id="445">
+        <field name="NUM">50</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="366">
         <next>
-          <block type="controls_if" id="316" inline="false">
-            <value name="IF0">
-              <block type="sensor_spectrometer" id="129">
-                <field name="LIGHT">RED</field>
+          <block type="oled_setcursor" id="483" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="514">
+                <field name="NUM">0</field>
               </block>
             </value>
+            <value name="STARTY">
+              <block type="math_number" id="521">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawnumber" id="530" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="129">
+                    <field name="LIGHT">RED</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
   <block type="controls_if" id="122" inline="false" x="-117" y="232"></block>
+  <block type="multimedia_displaybmp" id="323" x="-167" y="307">
+    <field name="BMP"></field>
+  </block>
 </xml>
