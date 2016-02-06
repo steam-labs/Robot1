@@ -16,31 +16,7 @@
               </block>
             </value>
             <statement name="DO">
-              <block type="oled_cleardisplay" id="366">
-                <next>
-                  <block type="oled_setcursor" id="483" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="514">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="521">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="oled_drawnumber" id="530" inline="true">
-                        <value name="NUMBER">
-                          <block type="sensor_spectrometer" id="129">
-                            <field name="LIGHT">RED</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
+              <block type="movement_stop" id="590"></block>
             </statement>
           </block>
         </statement>
