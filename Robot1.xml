@@ -1,36 +1,26 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="684" inline="true" x="-88" y="114">
-    <value name="TIMES">
-      <block type="math_number" id="691">
-        <field name="NUM">10000</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="oled_cleardisplay" id="638">
-        <next>
-          <block type="oled_setcursor" id="647" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="661">
-                <field name="NUM">0</field>
+  <block type="movement_forward" id="701" x="-80" y="-1">
+    <next>
+      <block type="controls_if" id="794" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="774" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="787">
+                <field name="LIGHT">RED</field>
               </block>
             </value>
-            <value name="STARTY">
-              <block type="math_number" id="654">
-                <field name="NUM">0</field>
+            <value name="B">
+              <block type="math_number" id="801">
+                <field name="NUM">87</field>
               </block>
             </value>
-            <next>
-              <block type="oled_drawnumber" id="670" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="677">
-                    <field name="LIGHT">RED</field>
-                  </block>
-                </value>
-              </block>
-            </next>
           </block>
-        </next>
+        </value>
+        <statement name="DO0">
+          <block type="movement_stop" id="811"></block>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
