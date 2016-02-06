@@ -1,26 +1,36 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="565" x="104" y="15">
-    <next>
-      <block type="controls_whileUntil" id="580" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_spectrometer" id="572">
-            <field name="LIGHT">RED</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="controls_repeat" id="438" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="445">
-                <field name="NUM">10000</field>
+  <block type="controls_repeat" id="684" inline="true" x="-88" y="114">
+    <value name="TIMES">
+      <block type="math_number" id="691">
+        <field name="NUM">10000</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="638">
+        <next>
+          <block type="oled_setcursor" id="647" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="661">
+                <field name="NUM">0</field>
               </block>
             </value>
-            <statement name="DO">
-              <block type="movement_stop" id="590"></block>
-            </statement>
+            <value name="STARTY">
+              <block type="math_number" id="654">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawnumber" id="670" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="677">
+                    <field name="LIGHT">RED</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
