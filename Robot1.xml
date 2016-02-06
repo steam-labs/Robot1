@@ -139,8 +139,4 @@
       </block>
     </statement>
   </block>
-  <block type="movement_left" id="1009" x="-302" y="-49"></block>
-  <block type="movement_forward" id="967" x="-347" y="134"></block>
-  <block type="movement_left" id="1019" x="-327" y="275"></block>
-  <block type="movement_forward" id="1030" x="-330" y="278"></block>
 </xml>
