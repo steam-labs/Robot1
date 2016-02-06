@@ -15,9 +15,9 @@
                 <field name="LIGHT">RED</field>
               </block>
             </value>
-            <statement name="DO">
+            <next>
               <block type="movement_stop" id="46"></block>
-            </statement>
+            </next>
           </block>
         </next>
       </block>
